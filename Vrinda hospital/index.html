@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrinda Ayurveda and Panchakarma Center</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Lato', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3, h4 { font-family: 'Merriweather', serif; }
+        
+        /* --- IMAGE INSTRUCTIONS --- */
+        /* To change the big background image below, replace the URL inside url('...') */
+        .hero-bg {
+            background-image: linear-gradient(rgba(20, 83, 45, 0.8), rgba(20, 83, 45, 0.7)), url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .service-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-stone-50 text-gray-800">
+
+    <!-- Emergency/Contact Bar -->
+    <div class="bg-green-800 text-white py-2 px-4 text-center text-sm font-bold">
+        <i class="fas fa-phone-alt mr-2"></i> Book a Consultation: 9423137075
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            
+            <!-- LOGO SECTION -->
+            <div class="flex items-center space-x-3">
+                <!-- 
+                   INSTRUCTION: To add your logo:
+                   1. Upload your logo to https://imgbb.com/
+                   2. Copy the "Direct Link" they give you.
+                   3. Replace the 'src' below with that link.
+                -->
+                <img src="https://cdn-icons-png.flaticon.com/512/3050/3050343.png" alt="Vrinda Ayurveda Logo" class="h-12 w-12 object-contain">
+                
+                <div>
+                    <h1 class="text-2xl font-bold text-green-900 leading-tight">Vrinda Ayurveda</h1>
+                    <p class="text-xs text-green-600 tracking-wider font-bold">Ayurveda and Panchakarma Center</p>
+                </div>
+            </div>
+
+            <!-- Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-green-800 font-medium">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-green-800 font-medium">About</a>
+                <a href="#services" class="text-gray-600 hover:text-green-800 font-medium">Treatments</a>
+                <a href="#doctor" class="text-gray-600 hover:text-green-800 font-medium">Dr. Profile</a>
+                <a href="#contact" class="bg-green-700 text-white px-5 py-2 rounded-full hover:bg-green-800 transition">Contact</a>
+                
+                <select id="language-selector" class="border border-gray-300 rounded px-2 py-1 text-sm">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="gu">Marathi</option> <!-- Added generic Indian languages example -->
+                </select>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-green-900 text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#home" class="block py-3 px-4 border-b hover:bg-gray-50">Home</a>
+            <a href="#about" class="block py-3 px-4 border-b hover:bg-gray-50">About</a>
+            <a href="#services" class="block py-3 px-4 border-b hover:bg-gray-50">Treatments</a>
+            <a href="#doctor" class="block py-3 px-4 border-b hover:bg-gray-50">Doctor</a>
+            <a href="#contact" class="block py-3 px-4 text-green-800 font-bold">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-[600px] flex items-center relative">
+        <div class="container mx-auto px-4 text-center text-white z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg" data-key="hero_title">Restore Your Natural Balance</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto" data-key="hero_subtitle">Authentic Ayurvedic treatments personalized for your body and mind.</p>
+            <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-bold text-lg transition shadow-lg" data-key="btn_appointment">Book Consultation</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <!-- HOSPITAL PHOTO SPOT -->
+                <!-- INSTRUCTION: Upload hospital photo to imgbb.com and paste link in 'src' below -->
+                <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ayurveda Center" class="rounded-xl shadow-2xl border-4 border-green-50">
+            </div>
+            <div class="md:w-1/2">
+                <h4 class="text-green-600 font-bold uppercase tracking-wide mb-2">Welcome to Vrinda Ayurveda</h4>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900" data-key="about_title">Ancient Wisdom, Modern Healing</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed" data-key="about_desc">
+                    Vrinda Ayurveda is dedicated to restoring your health through traditional Ayurvedic principles. We focus on root-cause diagnosis and personalized care.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center"><i class="fas fa-leaf text-green-600 mr-3"></i> <span data-key="feature_1">100% Natural Therapies</span></li>
+                    <li class="flex items-center"><i class="fas fa-leaf text-green-600 mr-3"></i> <span data-key="feature_2">Experienced Vaidya (Doctor)</span></li>
+                    <li class="flex items-center"><i class="fas fa-leaf text-green-600 mr-3"></i> <span data-key="feature_3">Personalized Diet Plans</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatments Section -->
+    <section id="services" class="py-16 bg-stone-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4" data-key="services_title">Our Treatments</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Specialized therapies designed to detoxify and rejuvenate.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Panchakarma -->
+                <div class="bg-white p-8 rounded-xl shadow-sm service-card border-t-4 border-green-600">
+                    <div class="text-green-600 text-4xl mb-4"><i class="fas fa-spa"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Panchakarma</h3>
+                    <p class="text-gray-600">Complete detoxification therapy to cleanse the body of toxins and restore balance to the doshas.</p>
+                </div>
+
+                <!-- Shirodhara -->
+                <div class="bg-white p-8 rounded-xl shadow-sm service-card border-t-4 border-green-600">
+                    <div class="text-green-600 text-4xl mb-4"><i class="fas fa-oil-can"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Shirodhara</h3>
+                    <p class="text-gray-600">A profound relaxation therapy involving the pouring of warm herbal oil over the forehead.</p>
+                </div>
+
+                <!-- Diet Suggestions -->
+                <div class="bg-white p-8 rounded-xl shadow-sm service-card border-t-4 border-green-600">
+                    <div class="text-green-600 text-4xl mb-4"><i class="fas fa-apple-alt"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Diet Suggestions (Ahara)</h3>
+                    <p class="text-gray-600">Personalized nutritional guidance based on your body constitution (Prakriti).</p>
+                </div>
+                
+                 <!-- Basti -->
+                 <div class="bg-white p-8 rounded-xl shadow-sm service-card border-t-4 border-green-600">
+                    <div class="text-green-600 text-4xl mb-4"><i class="fas fa-syringe"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Basti Karma</h3>
+                    <p class="text-gray-600">Herbal enema therapy highly effective for Vata disorders, joint pain, and arthritis.</p>
+                </div>
+
+                <!-- Nadi Pariksha -->
+                <div class="bg-white p-8 rounded-xl shadow-sm service-card border-t-4 border-green-600">
+                    <div class="text-green-600 text-4xl mb-4"><i class="fas fa-heartbeat"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Nadi Pariksha</h3>
+                    <p class="text-gray-600">Ancient pulse diagnosis technique to accurately diagnose imbalances in the body.</p>
+                </div>
+
+                <!-- Abhyanga -->
+                <div class="bg-white p-8 rounded-xl shadow-sm service-card border-t-4 border-green-600">
+                    <div class="text-green-600 text-4xl mb-4"><i class="fas fa-hands"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Abhyanga</h3>
+                    <p class="text-gray-600">Full body herbal oil massage to improve circulation, muscle tone, and sleep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Profile Section -->
+    <section id="doctor" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-green-900 mb-12">Meet Your Doctor</h2>
+            
+            <!-- Single Doctor Card -->
+            <div class="max-w-2xl mx-auto bg-stone-50 rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                <div class="md:w-1/2">
+                    <!-- DOCTOR PHOTO SPOT -->
+                    <!-- INSTRUCTION: Upload your photo to imgbb.com and paste link in 'src' below -->
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Doctor Photo" class="w-full h-full object-cover">
+                </div>
+                <div class="md:w-1/2 p-8 text-left flex flex-col justify-center">
+                    <!-- EDIT HERE: YOUR NAME -->
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Dr. Deepali Shinde</h3>
+                    <p class="text-green-700 font-bold mb-4">B.A.M.S, (Ayurveda)</p>
+                    <p class="text-gray-600 mb-6">
+                        Specialist in Panchakarma and Chronic Disease Management with over 10 years of experience in authentic Ayurvedic healing.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="text-green-700 font-bold border-b-2 border-green-700 pb-1 hover:text-green-900">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-green-900 text-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row gap-12">
+            
+            <!-- Address & Info -->
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-6">Visit Our Ayurveda Center</h2>
+                <p class="mb-8 opacity-80">We welcome you to experience true healing.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1 mr-4 text-xl text-green-300"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">Address</h4>
+                            <!-- EDIT HERE: YOUR ADDRESS -->
+                            <p class="opacity-80">
+                                Google Maps link - https://maps.app.goo.gl/nHB53y79nBKYZr5U6 <br>
+                                
+                                Vrinda Ayurveda and Panchakarma Center<br>
+                                Plot number - 15, Survey number 272, Tandulwadi road,<br>
+                                Near Satav Chowk Baramati, Pune, Maharashtra - 413102
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-phone mt-1 mr-4 text-xl text-green-300"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">Phone</h4>
+                            <!-- EDIT HERE: PHONE -->
+                            <p class="opacity-80">+91 9423137075</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="md:w-1/2 bg-white text-gray-800 rounded-xl p-8 shadow-2xl">
+                <h3 class="text-2xl font-bold mb-6 text-green-900">Request Consultation</h3>
+                
+                <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="mb-6">
+                    <div class="mb-4">
+                        <label class="block text-sm font-bold mb-1">Your Name</label>
+                        <input type="text" name="name" class="w-full border p-2 rounded outline-none focus:border-green-500">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-bold mb-1">Phone Number</label>
+                        <input type="tel" name="phone" class="w-full border p-2 rounded outline-none focus:border-green-500">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-sm font-bold mb-1">Treatment Interest</label>
+                        <select name="treatment" class="w-full border p-2 rounded outline-none focus:border-green-500">
+                            <option>General Consultation</option>
+                            <option>Panchakarma</option>
+                            <option>Shirodhara</option>
+                            <option>Diet Plan</option>
+                            <option>Basti</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-green-700 hover:bg-green-800 text-white font-bold py-3 rounded transition">Send Request</button>
+                </form>
+
+                <!-- WhatsApp -->
+                <button onclick="sendToWhatsApp()" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded transition flex justify-center items-center">
+                    <i class="fab fa-whatsapp text-2xl mr-2"></i> Book via WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-green-950 text-white py-8 border-t border-green-900 text-center">
+        <p class="opacity-60 text-sm">&copy; 2023 Vrinda Ayurveda. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // --- CUSTOMIZATION ---
+        const doctorPhoneNumber = "9423137075"; // Replace with your number
+        // ---------------------
+
+        function sendToWhatsApp() {
+            const text = "Hello Doctor, I am interested in an Ayurveda consultation.";
+            const url = `https://wa.me/${doctorPhoneNumber}?text=${encodeURIComponent(text)}`;
+            window.open(url, '_blank');
+        }
+
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Language Logic (Basic Example)
+        const translations = {
+            en: { hero_title: "Restore Your Natural Balance", hero_subtitle: "Authentic Ayurvedic treatments personalized for your body and mind." },
+            hi: { hero_title: "प्राकृतिक संतुलन बहाल करें", hero_subtitle: "आपके शरीर और मन के लिए व्यक्तिगत और प्रामाणिक आयुर्वेदिक उपचार।" },
+            gu: { hero_title: "तुमचे नैसर्गिक संतुलन पुनर्स्थापित करा", hero_subtitle: "तुमच्या शरीर आणि मनासाठी वैयक्तिकृत, खऱ्या आयुर्वेदीय उपचारांची अनुभूती." }
+        };
+
+        document.getElementById('language-selector').addEventListener('change', (e) => {
+            const lang = e.target.value;
+            const elements = document.querySelectorAll('[data-key]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-key');
+                if(translations[lang] && translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+        });
+    </script>
+</body>
+</html>
